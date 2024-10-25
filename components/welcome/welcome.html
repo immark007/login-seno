@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Bem-vindo, <span id="userName"></span>!</h1>
+            <p>Seu e-mail: <span id="userEmail"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Recupera dados do localStorage e exibe
+        const userName = localStorage.getItem("userName");
+        const userEmail = localStorage.getItem("userEmail");
+
+        document.getElementById("userName").textContent = userName;
+        document.getElementById("userEmail").textContent = userEmail;
+    </script>
+</body>
+</html>

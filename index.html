@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENO LOGIN</title>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -30,8 +33,17 @@
                 <hr>
             </div>
 
+            <div id="buttonDiv" class="justify-center space"></div>
+
             <p>Não é nosso aluno ainda? <a href="">Cadastre-se</a></p>
         </div>
     </div>
+
+
+    <div>
+        <p id="userName"></p>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
