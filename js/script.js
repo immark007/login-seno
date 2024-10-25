@@ -6,7 +6,7 @@ function handleCredentialResponse(response) {
     localStorage.setItem("userName", data.name);
     localStorage.setItem("userEmail", data.email);
 
-    // Redireciona para a página de boas-vindas com URL completa
+    // Redireciona para a página de boas-vindas
     window.location.href = "https://immark007.github.io/login-seno/components/welcome/welcome.html";
 }
 
@@ -21,6 +21,13 @@ window.onload = function () {
         { theme: "outline", size: "large" }
     );
     google.accounts.id.prompt();
+
+    // Verificação de login na página inicial
+    const userName = localStorage.getItem("userName");
+    if (userName) {
+        // Redireciona para a página de boas-vindas se já estiver logado
+        window.location.href = "https://immark007.github.io/login-seno/components/welcome/welcome.html";
+    }
 };
 
 // Verificação de login na página de boas-vindas
