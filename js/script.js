@@ -42,5 +42,5 @@ document.addEventListener("DOMContentLoaded", function() {
 // Função de logout
 function logout() {
     localStorage.clear();
-    window.location.href = "/index.html";
+    window.location.href = "https://immark007.github.io/login-seno/";
 }
