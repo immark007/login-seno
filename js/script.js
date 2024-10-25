@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Verifica se o usuário está logado, caso contrário redireciona para a página de login
     if (!userName && window.location.pathname.includes("welcome")) {
-        window.location.href = "/index.html";
+        window.location.href = "https://immark007.github.io/login-seno/";
     } else if (userName) {
         // Exibe o nome do usuário na página de boas-vindas
         const welcomeUserName = document.getElementById("welcomeUserName");
