@@ -6,8 +6,8 @@ function handleCredentialResponse(response) {
     localStorage.setItem("userName", data.name);
     localStorage.setItem("userEmail", data.email);
 
-    // Redireciona para a página de boas-vindas
-    window.location.href = "/components/welcome/welcome.html";
+    // Redireciona para a página de boas-vindas com URL completa
+    window.location.href = "https://immark007.github.io/login-seno/components/welcome/welcome.html";
 }
 
 // Inicializa o login do Google quando a página carrega
