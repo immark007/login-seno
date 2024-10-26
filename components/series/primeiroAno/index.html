@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias - 1º Ano do Fundamental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../welcome/styles.css">
+    <style>
+        /* Adiciona estilo para cursor pointer nos cards e links */
+        .card {
+            cursor: pointer; /* Muda o cursor para pointer ao passar sobre o card */
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Matérias do 1º Ano do Ensino Fundamental</h1>
+        
+        <div class="card-container">
+            <div class="card">
+                <a href="../primeiroAno/primeiroAnoConteudo/index.html"> <!-- Substitua 'matematica.html' pelo caminho correto para a página de conteúdos de Matemática -->
+                    <img src="https://via.placeholder.com/150" alt="Matemática" class="card-image">
+                    <h2>Matemática</h2>
+                    <p>Introdução aos números e operações básicas.</p>
+                </a>
+            </div>
+            
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Português" class="card-image">
+                <h2>Português</h2>
+                <p>Desenvolvimento da leitura e escrita.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Ciências" class="card-image">
+                <h2>Ciências</h2>
+                <p>Exploração do mundo natural e seus elementos.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="História" class="card-image">
+                <h2>História</h2>
+                <p>Introdução à história e suas narrativas.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Geografia" class="card-image">
+                <h2>Geografia</h2>
+                <p>Conhecimento sobre o espaço geográfico.</p>
+            </div>
+        </div>
+        
+        <button onclick="window.history.back()" class="back-button">Voltar</button>
+    </div>
+    
+    <!-- JavaScript para manipulações adicionais se necessário -->
+    <script src="../../../js/script.js""></script>
+</body>
+</html>
