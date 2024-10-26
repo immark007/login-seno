@@ -30,19 +30,17 @@ window.onload = function () {
     }
 };
 
-// Verificação de login na página de boas-vindas
+// Exibição do nome e e-mail na página de boas-vindas
 document.addEventListener("DOMContentLoaded", function() {
     const userName = localStorage.getItem("userName");
+    const userEmail = localStorage.getItem("userEmail");
 
-    // Verifica se o usuário está logado, caso contrário redireciona para a página de login
-    if (!userName && window.location.pathname.includes("welcome")) {
+    if (userName && userEmail) {
+        document.getElementById("userName").textContent = userName;
+        document.getElementById("userEmail").textContent = userEmail;
+    } else if (window.location.pathname.includes("welcome")) {
+        // Redireciona para a página de login se não estiver logado
         window.location.href = "https://immark007.github.io/login-seno/";
-    } else if (userName) {
-        // Exibe o nome do usuário na página de boas-vindas
-        const welcomeUserName = document.getElementById("welcomeUserName");
-        if (welcomeUserName) {
-            welcomeUserName.textContent = userName;
-        }
     }
 });
 
