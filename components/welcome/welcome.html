@@ -1,33 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <h1>Bem-vindo, <span id="userName"></span>!</h1>
-            <p>Seu e-mail: <span id="userEmail"></span></p>
+        <!-- Perfil do Usuário -->
+        <div class="user-profile">
+            <img src="https://via.placeholder.com/80" alt="Ícone de Perfil" class="profile-icon">
+            <div class="user-info">
+                <h2 id="userName">Usuário</h2>
+                <p id="userEmail">email@exemplo.com</p>
+            </div>
+            <button onclick="logout()" class="logout-button">Sair</button>
         </div>
 
+        <!-- Título da Página -->
+        <h1>Séries Escolares</h1>
+
+        <!-- Container dos Cards de Séries -->
+        <div class="card-container">
+            <!-- Ensino Fundamental -->
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="1º Ano Fundamental" class="card-image">
+                <h2>1º Ano do Fundamental</h2>
+                <p>Início da alfabetização e introdução aos números.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="2º Ano Fundamental" class="card-image">
+                <h2>2º Ano do Fundamental</h2>
+                <p>Aprofundamento da leitura e da escrita.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="3º Ano Fundamental" class="card-image">
+                <h2>3º Ano do Fundamental</h2>
+                <p>Consolidação da alfabetização e primeiros conceitos de matemática.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="4º Ano Fundamental" class="card-image">
+                <h2>4º Ano do Fundamental</h2>
+                <p>Introdução às ciências e estudos sociais.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="5º Ano Fundamental" class="card-image">
+                <h2>5º Ano do Fundamental</h2>
+                <p>Preparação para o ciclo avançado do ensino fundamental.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="6º Ano Fundamental" class="card-image">
+                <h2>6º Ano do Fundamental</h2>
+                <p>Exploração de ciências naturais e história.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="7º Ano Fundamental" class="card-image">
+                <h2>7º Ano do Fundamental</h2>
+                <p>Estudo avançado de matemática e introdução à física.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="8º Ano Fundamental" class="card-image">
+                <h2>8º Ano do Fundamental</h2>
+                <p>Estudos em química e geografia física.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="9º Ano Fundamental" class="card-image">
+                <h2>9º Ano do Fundamental</h2>
+                <p>Conclusão do ensino fundamental e preparação para o ensino médio.</p>
+            </div>
+
+            <!-- Ensino Médio -->
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="1º Ano Médio" class="card-image">
+                <h2>1º Ano do Ensino Médio</h2>
+                <p>Introdução às ciências humanas e biologia.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="2º Ano Médio" class="card-image">
+                <h2>2º Ano do Ensino Médio</h2>
+                <p>Estudo aprofundado de matemática e física.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="3º Ano Médio" class="card-image">
+                <h2>3º Ano do Ensino Médio</h2>
+                <p>Preparação para vestibulares e revisão de conteúdos.</p>
+            </div>
+        </div>
     </div>
 
-    <button onclick="logout()">Sair</button>
-    <script>
-        // Recupera dados do localStorage e exibe
-        const userName = localStorage.getItem("userName");
-        const userEmail = localStorage.getItem("userEmail");
-
-        document.getElementById("userName").textContent = userName;
-        document.getElementById("userEmail").textContent = userEmail;
-
-
-    </script>
-
-
+    <!-- JavaScript para exibir o nome e o e-mail do usuário e realizar o logout -->
     <script src="../../js/script.js"></script>
 </body>
 </html>
