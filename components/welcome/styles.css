@@ -39,8 +39,7 @@ h1 {
 }
 
 .profile-icon {
-    width: 80px;
-    height: 80px;
+    font-size: 30px;
     border-radius: 50%;
 }
 
@@ -65,6 +64,7 @@ h1 {
 }
 
 /* Estilos dos Cards */
+/* Estilos dos Cards */
 .card-container {
     display: flex;
     gap: 20px;
@@ -76,22 +76,24 @@ h1 {
     background-color: #282433;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 250px;
+    width: 300px; /* Aumente a largura do card para 300px ou mais */
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
 .card-image {
-    width: 100%;
+    width: 100%; /* A imagem ocupará toda a largura do card */
+    height: auto; /* Mantenha a proporção da imagem */
     border-radius: 8px;
     margin-bottom: 15px;
     background-color: #666;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
